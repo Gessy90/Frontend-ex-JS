@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>My test page</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <ul>
+        <li>
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" />
+        </li>
+        <li>
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" />
+        </li>
+        <li>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" />
+        </li>
+        <li>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" />
+        </li>
+        <li>
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" />
+        </li>
+        <li>
+          <label for="hireDate">Hire Date:</label>
+          <input type="date" id="hireDate" name="hireDate" />
+        </li>
+        <li class="button">
+          <button type="submit" onclick="check(event)">SUBMIT</button>
+        </li>
+      </ul>
+    </form>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
