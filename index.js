@@ -1,6 +1,7 @@
+//FIRST METHOD
 // async function postData(url = '', customer = '') {
 //     //     const response = await fetch(url, {
-//       method: 'POST', // *GET, POST, PUT, DELETE, etc.
+//       method: 'POST', 
 //       body: {customerID: customer} // body data type must match "Content-Type" header
 //     });
 
@@ -12,13 +13,15 @@
 //     console.log(response); // JSON data parsed by `response.json()` call
 // });
 
+// var cors =https://cors-anywhere.herokuapp.com/
+//SECOND METHOD
 const url1 =
-  "https://cors-anywhere.herokuapp.com/https://ln1rp.e-learningportal.com/sandbox/frontendexercise/getAttributes.cfm?customerID=customerA";
+  "https://ln1rp.e-learningportal.com/sandbox/frontendexercise/getAttributes.cfm?customerID=customerA";
 
 const data1 = { customerID: "customerA" };
 const postData1 = async () => {
   const response = await fetch(url, {
-    method: "POST",
+    method: "POST",headers:{customerID: 'customerA'}
     body: JSON.stringify(data1)
   });
   const test = await response.json();
