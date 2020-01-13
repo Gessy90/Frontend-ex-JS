@@ -21,4 +21,4 @@
 ### This is the data when I select JSON Text
 
 ![JSON Text](https://user-images.githubusercontent.com/42389173/72286077-4c0bc980-363c-11ea-95b3-a480c0be1f65.png)
-* I've decided to leave all my attempts to get the data from the POST request just to show you that I've tried multiple times. I do apologise that I didn't complete this.
+* I've decided to leave all my attempts to get the data from the POST request just to show you that I've tried multiple times. I do apologise that I didn't manage to complete the exercise.
