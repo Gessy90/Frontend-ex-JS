@@ -18,11 +18,10 @@
 const url1 =
   "https://ln1rp.e-learningportal.com/sandbox/frontendexercise/getAttributes.cfm?customerID=customerA";
 
-const data1 = { customerID: "customerA" };
 const postData1 = async () => {
   const response = await fetch(url, {
-    method: "POST",headers:{customerID: 'customerA'}
-    body: JSON.stringify(data1)
+    method: "POST",headers:{customerID: 'customerA'},
+    body: JSON.stringify()
   });
   const test = await response.json();
   console.log("json", test);
@@ -102,4 +101,18 @@ const formInput = customerA.forEach(val => {
   input.placeholder = val.name;
 });
 
-formId.appendChild(formInput);
+// formId.appendChild(formInput);
+
+
+const url2 =
+  "https://ln1rp.e-learningportal.com/sandbox/frontendexercise/register.cfm";
+
+
+const postData2 = async () => {
+  const response = await fetch(url, {
+    method: "POST",headers:{customerID: 'customerA'},
+    body: JSON.stringify()
+  });
+  const test = await response.json();
+  console.log("json", test);
+};
