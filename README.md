@@ -1,4 +1,4 @@
-#### Frontend Exercise ###
+# Frontend Exercise 
 
 ## Technologies used
 
