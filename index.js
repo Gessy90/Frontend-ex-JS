@@ -1,14 +1,13 @@
-const url1 =
-  "https://ln1rp.e-learningportal.com/sandbox/frontendexercise/getAttributes.cfm?customerID=customerA";
+const fd = new FormData()
+fd.append('customerID', 'customerA')
 
-const postData1 = async () => {
-  const response = await fetch(url, {
-    method: "POST",headers:{customerID: 'customerA'},
-    body: JSON.stringify()
-  });
-  const test = await response.json();
-  console.log("json", test);
-};
+fetch('https://ln1rp.e-learningportal.com/sandbox/frontendexercise/getAttributes.cfm', {
+  method: 'POST',
+  credentials: 'omit',
+  body: fd
+}).then(response => response.json()).then(data => console.log(data))
+
+
 
 
 // //Since I wasn't getting any data I've tried to do it this way where I was trying to work with
